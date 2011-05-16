@@ -1,0 +1,17 @@
+<!-- Indices written at Fri, 22 Apr 2011 12:17:22 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 14 times in query history -->
+    <datastore-index kind="FinanceAccount" ancestor="false" source="auto">
+        <property name="userEmail" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 4 times in query history -->
+    <datastore-index kind="Movement" ancestor="false" source="auto">
+        <property name="financeAccountId" direction="asc"/>
+        <property name="creation" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>

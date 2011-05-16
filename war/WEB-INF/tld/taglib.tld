@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd"> 
+
+<taglib> 
+<tlibversion>1.2</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>Postprocessor taglib</shortname>
+<uri>http://www.servletsuite.com/servlets/postproctag</uri>
+<info>Preprocessor taglib</info> 
+
+<tag>
+<name>getOriginalURI</name>
+<tagclass>com.cj.generic1flt.getOriginalURITag</tagclass>
+<teiclass>com.cj.generic1flt.strVariable</teiclass>
+<bodycontent>empty</bodycontent>
+<info>prints original URI</info>
+
+<attribute>
+<name>id</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+<tag>
+<name>getContentType</name>
+<tagclass>com.cj.generic1flt.getContentTypeTag</tagclass>
+<teiclass>com.cj.generic1flt.strVariable</teiclass>
+<bodycontent>empty</bodycontent>
+<info>prints content type</info>
+
+<attribute>
+<name>id</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+<tag>
+<name>getContentLength</name>
+<tagclass>com.cj.generic1flt.getContentLengthTag</tagclass>
+<teiclass>com.cj.generic1flt.intVariable</teiclass>
+<bodycontent>empty</bodycontent>
+<info>prints content length</info>
+
+<attribute>
+<name>id</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+<tag>
+<name>getContent</name>
+<tagclass>com.cj.generic1flt.getContentTag</tagclass>
+<teiclass>com.cj.generic1flt.byteVariable</teiclass>
+<bodycontent>empty</bodycontent>
+<info>gets content</info>
+
+<attribute>
+<name>id</name>
+<required>true</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+<tag>
+<name>getContentString</name>
+<tagclass>com.cj.generic1flt.getContentStringTag</tagclass>
+<teiclass>com.cj.generic1flt.strVariable</teiclass>
+<bodycontent>empty</bodycontent>
+<info>prints content length</info>
+
+<attribute>
+<name>id</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+<attribute>
+<name>encoding</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+</tag>
+
+<tag>
+<name>stopChain</name>
+<tagclass>com.cj.generic1flt.StopChainTag</tagclass>
+<bodycontent>empty</bodycontent>
+<info>stops chain</info>
+
+<attribute>
+<name>cond</name>
+<required>false</required>
+<rtexprvalue>true</rtexprvalue>
+</attribute>
+
+</tag>
+
+</taglib> 
+
